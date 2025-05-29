@@ -7,6 +7,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+/**
+ * Home component serves as the main landing page for the Airbnb Application Clone system.
+ * 
+ * @remarks
+ * This component displays a welcome message, a "Get Started" button, and several helpful links
+ * including deployment and documentation resources. It also features branding images and a footer
+ * with additional learning and example links.
+ * 
+ * @returns {JSX.Element} The rendered landing page for the application.
+ */
 const Home: React.FC = () => {
   return (
     <>
