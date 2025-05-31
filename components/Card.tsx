@@ -1,25 +1,13 @@
-import React from "../alx-project-0x00/node_modules/@types/react";
-import Image from "../alx-project-0x00/public/assets";
-
-declare module "../alx-project-0x00/public/assets" {
-  import * as React from "react";
-  interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-    src: string;
-    alt: string;
-    width?: number;
-    height?: number;
-    className?: string;
-  }
-  const Image: React.FC<ImageProps>;
-  export default Image;
-}
+import Image from "next/image";
+import HOUSE_IMAGE from "@/public/assets/house.png";
+import STAR_IMAGE from "@/public/assets/star.png";
+//import React from "react";
 import Pill from "./Pill";
 
-const HOUSE_IMAGE = "/assets/house.png";
-const STAR_IMAGE = "/assets/star.png";
 
 const Card: React.FC = () => {
-  return (
+
+ return (
     <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
       <Image className="rounded-lg" src={HOUSE_IMAGE} width={378.56} height={299.37} alt="house image" />
       <div className="p-2 flex gap-2 mt-2">
@@ -33,7 +21,7 @@ const Card: React.FC = () => {
           <p className=" font-medium text=[17px] text-[#929292]">Sideman, Bali, Indonesia</p>
         </div>
         <div className="flex items-center">
-          <Image src={STAR_IMAGE} alt="star" width={16} height={16} />
+          <Image src={STAR_IMAGE} alt="star" />
           <p className=" font-medium text=[17px] ml-2">4.76</p>
         </div>
       </div>
@@ -74,7 +62,9 @@ const Card: React.FC = () => {
 
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+
+
+export default Card
