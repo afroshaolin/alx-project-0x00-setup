@@ -1,7 +1,7 @@
 {
   "name": "alx-project-0x00",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@types/next": "^8.0.7",
-    "next": "^15.3.2",
+    "next": "^15.3.3",
+    "next.js": "^1.0.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
