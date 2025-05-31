@@ -1,4 +1,4 @@
-import React from "";
+import React from "../alx-project-0x00/node_modules/@types/react";
 
 const Pill: React.FC = () => {
   return (
@@ -7,5 +7,5 @@ const Pill: React.FC = () => {
     </div>
   )
 }
-
+// This is a simple React functional component that renders a pill-shaped element with a title.
 export default Pill;

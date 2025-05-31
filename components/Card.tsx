@@ -1,5 +1,18 @@
-import React from "react";
-import Image from "alx-project-0x00/public/assets";
+import React from "../alx-project-0x00/node_modules/@types/react";
+import Image from "../alx-project-0x00/public/assets";
+
+declare module "../alx-project-0x00/public/assets" {
+  import * as React from "react";
+  interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+    src: string;
+    alt: string;
+    width?: number;
+    height?: number;
+    className?: string;
+  }
+  const Image: React.FC<ImageProps>;
+  export default Image;
+}
 import Pill from "./Pill";
 
 const HOUSE_IMAGE = "/assets/house.png";

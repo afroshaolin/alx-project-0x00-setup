@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,18 +15,37 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-    "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
-  "typeRoots": ["./node_modules/@types", "./types"],
-  "types": ["node", "jest", "react", "react-dom", "next", "next-auth"],
+  "typeRoots": [
+    "./node_modules/@types",
+    "./types"
+  ],
+  "types": [
+    "node",
+    "jest",
+    "react",
+    "react-dom",
+    "next",
+    "next-auth"
+  ],
   "typeAcquisition": {
     "enable": true,
-    "include": ["node", "jest", "react", "react-dom", "next", "next-auth"]
+    "include": [
+      "node",
+      "jest",
+      "react",
+      "react-dom",
+      "next",
+      "next-auth"
+    ]
   },
   "plugins": [
     {
@@ -33,6 +56,15 @@
   "allowSyntheticDefaultImports": true,
   "allowUmdGlobalAccess": true,
   "resolvePackageJsonExports": true,
-  "include": ["next-env.d.ts", "react", "node_modules", "**/*.ts", "**/*.tsx"],
-  "exclude": [""]
+  "include": [
+    "next-env.d.ts",
+    "react",
+    "node_modules",
+    "**/*.ts",
+    "**/*.tsx"
+    
+  ],
+  "exclude": [
+    ""
+  ]
 }
