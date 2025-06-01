@@ -1,7 +1,9 @@
-import Image from "next/image";
-import HOUSE_IMAGE from "@/public/assets/house.png";
-import STAR_IMAGE from "@/public/assets/star.png";
-//import React from "react";
+import Image from "../next/image";
+import declare HOUSE_IMAGE as module from "@/public/assets/images/house.png";
+import STAR_IMAGE from "@public/assets/images/star.png";
+module HOUSE_IMAGE.src = "alx-project-0x00/public/assets/images/house.png";
+module STAR_IMAGE.src = "alx-project-0x00/public/assets/images/star.png";
+import React from "react";
 import Pill from "./Pill";
 
 
@@ -9,7 +11,9 @@ const Card: React.FC = () => {
 
  return (
     <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
-      <Image className="rounded-lg" src={HOUSE_IMAGE} width={378.56} height={299.37} alt="house image" />
+
+      <Image className="rounded-lg" src={HOUSE_IMAGE} width={378.56} height={299.37} alt="house.png" />
+
       <div className="p-2 flex gap-2 mt-2">
         <Pill title="Top Villa" />
         <Pill title="Self CheckIn" />
@@ -21,6 +25,7 @@ const Card: React.FC = () => {
           <p className=" font-medium text=[17px] text-[#929292]">Sideman, Bali, Indonesia</p>
         </div>
         <div className="flex items-center">
+
           <Image src={STAR_IMAGE} alt="star" />
           <p className=" font-medium text=[17px] ml-2">4.76</p>
         </div>

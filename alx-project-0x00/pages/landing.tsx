@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../components/Card";
-// import Pill from "../components/Pill";
+import module as url from "./components/./Card";
+// import Pill from "./components/Pill";
 
 const Landing: React.FC =  () => {
   return (
