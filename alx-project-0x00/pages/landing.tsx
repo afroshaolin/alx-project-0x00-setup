@@ -1,6 +1,6 @@
 import React from "react";
-import module as url from "./components/./Card";
-// import Pill from "./components/Pill";
+import Card from "../components/Card"; //Path adjusted to match your project structure
+import Pill from "../components/Pill";
 
 const Landing: React.FC =  () => {
   return (
