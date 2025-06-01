@@ -22,13 +22,5 @@ export interface CardComponentProps {
 export interface LandingProps {
   cards: CardProps[];
 }
-export interface NavbarProps {
-  logo: string;
-  links: string[];
-  ctaText: string;
-  ctaLink: string;
-}
-export interface FooterProps {
-  links: string[];
-  socialMedia: string[];
-  copyright: string;
+
+
