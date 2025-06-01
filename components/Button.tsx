@@ -1,5 +1,5 @@
 
-import { ButtonProps } from "../interfaces/index"; //Adjust the import path as necessary
+import { ButtonProps } from "./interfaces/index"; //Adjust the import path as necessary
 import React from "react";
 // import { ButtonProps } from "./interfaces/index"; // Adjust the import path as necessary
 
