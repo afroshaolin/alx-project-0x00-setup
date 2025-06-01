@@ -1,8 +1,8 @@
-import Image from "../next/image";
-import declare HOUSE_IMAGE as module from "@/public/assets/images/house.png";
-import STAR_IMAGE from "@public/assets/images/star.png";
-module HOUSE_IMAGE.src = "alx-project-0x00/public/assets/images/house.png";
-module STAR_IMAGE.src = "alx-project-0x00/public/assets/images/star.png";
+import Image from "next/image";
+import HOUSE_IMAGE from "./alx-project-0x00/public/assests/images/house.png"; 
+import STAR_IMAGE from "..alx-project-0x00/public/assets/images/star.png";
+ HOUSE_IMAGE.src = "alx-project-0x00/public/assets/images/house.png";
+ STAR_IMAGE.src = "alx-project-0x00/public/assets/images/star.png";
 import React from "react";
 import Pill from "./Pill";
 
